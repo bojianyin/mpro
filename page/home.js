@@ -15,7 +15,7 @@ export default class Home extends Component {
             <View style={{flex:1}}>
                 <Button title={"hello world!"} onPress={()=>this.props.navigation.navigate("Newstack")}/>
                 <Button title={"hello world!"} onPress={()=>this.props.navigation.navigate("Newstack")}/>
-                <Button title={"hello world!"} onPress={()=>this.props.navigation.navigate("Newstack")} />
+                <Button title={"打开网页"} onPress={()=>this.props.navigation.navigate("Webcom")} />
             </View>
         );
     }

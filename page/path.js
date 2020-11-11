@@ -11,8 +11,10 @@ import Charts from "./Charts";
 import Command from "./Command";
 import Setting from "./setting";
 import Newstack from "./stack/newstack";
+import Webcom from "./stack/Webcom";
 import {gfont, gh, gw} from "../public/screenUtil";
 import NavigationService from "../public/NavigationService";
+
 const Drawer = createDrawerNavigator();
 
 function CustomDrawerContent(props) {
@@ -103,6 +105,9 @@ export default function App({params}) {
                     }} />
                     <Stack.Screen name="Newstack" component={Newstack} options={{
                         title:"新页面"
+                    }} />
+                    <Stack.Screen name="Webcom" component={Webcom} options={{
+                        title:"打开 webpage"
                     }} />
                 </Stack.Navigator>
 
